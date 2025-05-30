@@ -22,7 +22,7 @@
         header {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Randy B album cover image.jpg');
-            background-size: contain; /* Changed for square album cover */
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
@@ -53,8 +53,8 @@
             border-radius: 5px;
             font-weight: 500;
             margin-top: 1rem;
-            min-height: 44px; /* Touch-friendly */
-            touch-action: manipulation; /* Faster taps */
+            min-height: 44px;
+            touch-action: manipulation;
             transition: background-color 0.3s, box-shadow 0.3s;
         }
 
@@ -176,6 +176,11 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        .about p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
         .music-img {
             max-width: 150px;
             height: auto;
@@ -194,7 +199,7 @@
             color: #d4a017;
             font-size: 1.5rem;
             text-decoration: none;
-            min-height: 44px; /* Touch-friendly */
+            min-height: 44px;
             display: inline-flex;
             align-items: center;
         }
@@ -264,6 +269,10 @@
 
             .about-img {
                 max-width: 90%;
+            }
+
+            .about p {
+                font-size: 0.9rem;
             }
         }
 
@@ -335,7 +344,7 @@
     <section id="about" class="about">
         <h2>About Randy B</h2>
         <img src="randy B on the road literally - playing.jpg" alt="Randy B Performing on the Road" class="about-img" loading="lazy">
-        <p>Randy B is an R&B artist with a voice that captures the heart and soul of the genre. Blending smooth melodies with raw emotion, his music tells stories of love, life, and resilience. Join Randy B as he brings soul back to the spotlight.</p>
+        <p>Randy B’s soulful urban jazz guitar resonates with passion and perseverance. From jamming with legends like George Benson and Johnny “Guitar” Watson to leading The Collaboration Band, his journey began in Houston with the TSU Tornados and Detroit’s vibrant scene. After surviving a tragic 2006 accident that took his wife, Joanne, and left him with a broken neck, Randy’s music became his refuge. His debut single, “Joy and More Joy,” produced by Grammy winner Paul Brown, is a tribute to Joanne, its soulful notes played on a Stratocaster bearing her image. Recorded at Funky Joint Studio with Roberto Vally and Jeff Smith, it marks a new chapter for the electrician-turned-artist, driven by grit, hope, and dreams of Grammy recognition.</p>
     </section>
 
     <!-- Music Section -->
