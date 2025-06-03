@@ -27,21 +27,30 @@
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            justify-content: flex-end; /* Bottom alignment */
+            align-items: flex-start; /* Left alignment */
+            padding: 2rem;
             color: #fff;
+        }
+
+        .hero-content {
+            text-align: left;
+            max-width: 50%; /* Constrain to left quadrant */
+            margin-bottom: 2rem;
+            background-color: rgba(28, 37, 38, 0.9); /* Subtle background for contrast */
+            padding: 1rem;
+            border-radius: 5px;
         }
 
         header h1 {
             font-size: 4rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         header p {
             font-size: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         .btn {
@@ -52,7 +61,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: 500;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             min-height: 44px;
             touch-action: manipulation;
             transition: background-color 0.3s, box-shadow 0.3s;
@@ -67,9 +76,8 @@
             background-color: rgba(28, 37, 38, 0.8);
             color: #d4a017;
             padding: 0.8rem 1.5rem;
-            margin-top: 2rem;
+            margin-top: 1rem;
             border-radius: 5px;
-            max-width: 90%;
             font-size: 1.2rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
@@ -215,17 +223,28 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            .hero-content {
+                max-width: 80%;
+                padding: 0.8rem;
+            }
+
             header h1 {
                 font-size: 2.5rem;
             }
 
             header p {
                 font-size: 1.2rem;
+                margin-bottom: 0.8rem;
             }
 
             .construction-notice {
                 font-size: 1rem;
                 padding: 0.6rem 1rem;
+                margin-top: 0.8rem;
             }
 
             .btn {
@@ -278,17 +297,24 @@
         }
 
         @media (max-width: 480px) {
+            .hero-content {
+                max-width: 90%;
+                padding: 0.6rem;
+            }
+
             header h1 {
                 font-size: 2rem;
             }
 
             header p {
                 font-size: 1rem;
+                margin-bottom: 0.6rem;
             }
 
             .construction-notice {
-                font-size: 0.9rem;
-                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+                padding: 0.5rem 0.8rem;
+                margin-top: 0.6rem;
             }
 
             .music-item {
@@ -334,10 +360,12 @@
 
     <!-- Hero Section -->
     <header id="home">
-        <h1>Randy B</h1>
-        <p>Soulful vibes, timeless rhythm</p>
-        <a href="#music" class="btn">Listen Now</a>
-        <div class="construction-notice">Site Under Construction - More content coming soon!</div>
+        <div class="hero-content">
+            <h1>Randy B</h1>
+            <p>Soulful vibes, timeless rhythm</p>
+            <a href="#music" class="btn">Listen Now</a>
+            <div class="construction-notice">Site Under Construction - More content coming soon!</div>
+        </div>
     </header>
 
     <!-- About Section -->
